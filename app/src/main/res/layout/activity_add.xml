@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/textTituloFormulario"
+        android:layout_width="232dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tituloFormularioActivity"
+        app:layout_constraintBottom_toTopOf="@+id/textNombreFormulario"
+        app:layout_constraintStart_toStartOf="@+id/textNombreFormulario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNombreFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/textNombre"
+        app:layout_constraintBottom_toTopOf="@+id/edNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloFormulario" />
+
+    <TextView
+        android:id="@+id/textUbicacionFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/textUbicacion"
+        app:layout_constraintBottom_toTopOf="@+id/edUbicacionFormulario"
+        app:layout_constraintStart_toStartOf="@+id/edNombre"
+        app:layout_constraintTop_toBottomOf="@+id/edNombre" />
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textUbicacionFormulario"
+        app:layout_constraintStart_toStartOf="@+id/textNombreFormulario"
+        app:layout_constraintTop_toBottomOf="@+id/textNombreFormulario" />
+
+    <EditText
+        android:id="@+id/edUbicacionFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textTipologiaFormulario"
+        app:layout_constraintStart_toStartOf="@+id/textUbicacionFormulario"
+        app:layout_constraintTop_toBottomOf="@+id/textUbicacionFormulario" />
+
+    <TextView
+        android:id="@+id/textTipologiaFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/textTipologia"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTipologia"
+        app:layout_constraintStart_toStartOf="@+id/edUbicacionFormulario"
+        app:layout_constraintTop_toBottomOf="@+id/edUbicacionFormulario" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/botonGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verificadoFormulario" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/botonCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonGuardar" />
+
+
+    <CheckBox
+        android:id="@+id/verificadoFormulario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/textVerificado"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupVeracidad" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupVeracidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="49dp"
+        android:checkedButton="@id/radioButton1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/verificadoFormulario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipologia">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonA" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonB" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonD" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadioButtonC" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerTipologia"
+        android:layout_width="265dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:entries="@array/tipologia"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupVeracidad"
+        app:layout_constraintStart_toStartOf="@+id/textTipologiaFormulario"
+        app:layout_constraintTop_toBottomOf="@+id/textTipologiaFormulario" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

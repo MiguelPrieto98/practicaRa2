@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locate="es">
+
+    <string-array name="tipologia">
+        <item>Folclore y tradición oral.</item>
+        <item>Mitología antigua.</item>
+        <item>Leyenda urbana.</item>
+        <item>Críptido o bestiario.</item>
+        <item>Lugar histórico maldito.</item>
+        <item>Creepypasta.</item>
+    </string-array>
+</resources>

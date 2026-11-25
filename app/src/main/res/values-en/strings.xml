@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica-ud2-pmpdm-miguelAngelPrieto</string>
+    <string name="tvTituloMainActivity">Myths</string>
+    <string name="tituloDetalleActivity">Information about the myth/legend</string>
+    <string name="tituloFormularioActivity">New Myth/Legend</string>
+    <string name="textNombre">Name</string>
+    <string name="textUbicacion">Location</string>
+    <string name="textTipologia">Typology</string>
+    <string name="textVeracidad">Veracity/basis</string>
+    <string name="botonMainActivity">Add</string>
+    <string name="botonGuardar">Save</string>
+    <string name="botonCancelar">Cancel</string>
+    <string name="botonBorrar">Delete</string>
+    <string name="textoInvestigacion">Investigated/visited</string>
+    <string name="textVerificado">verified</string>
+    <string name="radioButtonA">Fiction</string>
+    <string name="radioButtonB">Inspired by true events</string>
+    <string name="RadioButtonC">without explanation</string>
+    <string name="radioButtonD">Mythology</string>
+
+</resources>

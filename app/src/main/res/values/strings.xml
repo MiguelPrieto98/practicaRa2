@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">practica-ud2-pmpdm-miguelAngelPrieto</string>
+    <string name="tvTituloMainActivity">Mitos</string>
+    <string name="tituloDetalleActivity">Infomacion sobre el Mito/leyenda</string>
+    <string name="tituloFormularioActivity">Nuevo Mito/Leyenda</string>
+    <string name="textNombre">Nombre</string>
+    <string name="textUbicacion">Ubicación</string>
+    <string name="textTipologia">Tipologia</string>
+    <string name="textVeracidad">Veracidad/base</string>
+    <string name="botonMainActivity">añadir</string>
+    <string name="botonGuardar">Guardar</string>
+    <string name="botonCancelar">Cancelar</string>
+    <string name="botonBorrar">Borrar</string>
+    <string name="textoInvestigacion">Invetigado/visitado</string>
+    <string name="textVerificado">Verificado</string>
+    <string name="radioButtonA">Ficción</string>
+    <string name="radioButtonB">Inspirado en hechos reales</string>
+    <string name="RadioButtonC">Sin explicacion</string>
+    <string name="radioButtonD">Mitologia</string>
+</resources>
