@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="45dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="27dp"
         android:text="@string/tituloFormularioActivity"
         app:layout_constraintBottom_toTopOf="@+id/textNombreFormulario"
         app:layout_constraintStart_toStartOf="@+id/textNombreFormulario"
@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginBottom="7dp"
         android:text="@string/textNombre"
         app:layout_constraintBottom_toTopOf="@+id/edNombre"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="10dp"
         android:text="@string/textUbicacion"
         app:layout_constraintBottom_toTopOf="@+id/edUbicacionFormulario"
         app:layout_constraintStart_toStartOf="@+id/edNombre"
@@ -45,7 +43,7 @@
         android:id="@+id/edNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/textUbicacionFormulario"
@@ -103,7 +101,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/textVerificado"
         app:layout_constraintBottom_toTopOf="@+id/buttonGuardar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,12 +113,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="50dp"
         android:checkedButton="@id/radioButton1"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/verificadoFormulario"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerTipologia">
+        app:layout_constraintTop_toBottomOf="@+id/tvVeracidad">
 
         <RadioButton
             android:id="@+id/radioButton1"
@@ -152,12 +150,22 @@
         android:id="@+id/spinnerTipologia"
         android:layout_width="265dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="12dp"
         android:entries="@array/tipologia"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroupVeracidad"
+        app:layout_constraintBottom_toTopOf="@+id/tvVeracidad"
         app:layout_constraintStart_toStartOf="@+id/textTipologiaFormulario"
         app:layout_constraintTop_toBottomOf="@+id/textTipologiaFormulario" />
 
+    <TextView
+        android:id="@+id/tvVeracidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/textVeracidad"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupVeracidad"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupVeracidad"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTipologia" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

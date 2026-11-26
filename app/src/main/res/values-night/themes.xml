@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Practicaud2pmpdmmiguelAngelPrieto" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.Practicaud2pmpdmmiguelAngelPrieto" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/pantone_classic_blue_dark</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">@color/pantone_living_coral_dark</item>
+        <item name="colorOnSecondary">#000000</item>
     </style>
 </resources>
